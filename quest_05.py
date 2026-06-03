@@ -30,3 +30,18 @@ for i in range(len(v)):
 if not achou:
   print("não existem elementos")
 
+#5. Alguém e o dobro - Apresente um algoritmo que resolve esse problema na lista ordenada.
+
+v = [3, 4, 5, 7, 8, 11, 15, 20, 21, 37]
+print(v)
+
+achou = False
+
+for num in v:
+  if 2*num in v:
+    print("número:", num, "e o dobro:" ,2*num)
+    achou = True
+    break
+if achou == False:
+  print("Não existem elementos")
+
