@@ -29,3 +29,18 @@ def inverter_fila(fila):
                             
     while not pilha.esta_vazia():
         fila.enqueue(pilha.pop())
+
+fila = Fila()
+valores = [1, 2, 3, 4, 5]
+print(f"Inserindo na fila: {valores}")
+for v in valores:
+    fila.enqueue(v)
+
+print("\nFila original:")
+fila.exibir()
+
+print("\nInvertendo fila usando pilha")
+inverter_fila(fila)
+
+print("\nFila invertida:")
+fila.exibir()
