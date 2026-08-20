@@ -19,3 +19,10 @@ class PilhaComMinimo:
                                                                                                     
     def min(self):
       return self.topo.min_abaixo if self.topo else None
+
+pilha = PilhaComMinimo()
+
+print("Empilhando: 5")
+pilha.push(5)
+print(f"Mínimo atual: {pilha.min()}")
+pilha.exibir_com_min()
