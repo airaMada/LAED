@@ -9,4 +9,4 @@ def verificar_delimitadores(expressao):
         elif char in ")]}":
            if pilha.esta_vazia() or pilha.pop() != pares[char]:
                 return False
-    return pilha.esta_vazia()])])}
+    return pilha.esta_vazia()
